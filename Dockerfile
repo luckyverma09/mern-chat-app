@@ -2,7 +2,7 @@
 FROM node:20-slim
 
 # Set working directory
-WORKDIR /app
+WORKDIR app
 
 # Copy application code
 COPY app/. .
