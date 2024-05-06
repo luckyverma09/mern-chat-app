@@ -5,7 +5,7 @@ FROM node:20-slim
 WORKDIR /app
 
 # Copy application code
-COPY Chat-App/. .
+COPY app/. .
 
 # Install dependencies
 RUN npm run dev
