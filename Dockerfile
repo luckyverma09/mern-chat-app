@@ -2,13 +2,13 @@
 FROM node:20-slim
 
 # Set working directory
-WORKDIR app
+WORKDIR /app
 
 # Copy application code
-COPY app/. .
+COPY . .
 
 # Install dependencies
-RUN npm run dev
+RUN npm install
 
 # Expose port 5000
 EXPOSE 5000
