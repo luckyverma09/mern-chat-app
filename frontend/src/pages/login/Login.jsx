@@ -21,9 +21,9 @@ const Login = () => {
           <span className="text-blue-500"> ChatApp</span>
         </h1>
 
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-          <div className="w-full">
-            <label className="label">
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label className="label p-2">
               <span className="text-base label-text">Username</span>
             </label>
             <input
@@ -35,7 +35,7 @@ const Login = () => {
             />
           </div>
 
-          <div className="w-full">
+          <div>
             <label className="label">
               <span className="text-base label-text">Password</span>
             </label>
@@ -47,18 +47,17 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-
           <Link
             to="/signup"
-            className="text-sm inline-block hover:underline hover:text-blue-600"
+            className="text-sm  hover:underline hover:text-blue-600 mt-2 inline-block"
           >
             {"Don't"} have an account?
           </Link>
 
-          <div className="w-full">
+          <div>
             <button className="btn btn-block btn-sm mt-2" disabled={loading}>
               {loading ? (
-                <span className="loading loading-spinner"></span>
+                <span className="loading loading-spinner "></span>
               ) : (
                 "Login"
               )}
