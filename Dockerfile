@@ -7,6 +7,7 @@ WORKDIR /app
 # Copy application code
 COPY . .
 
+
 # Install dependencies
 RUN npm run build
 
